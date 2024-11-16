@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A generic HTML site template.">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h1>Welcome to My Website</h1>
-            <p>This is a generic HTML boilerplate to kickstart your project.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Write something about your site or yourself here.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-
+    <title>Random Champs Gen</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="absolute mt-[25vh] ml-[45vw]">
+        <input type="number" min="1" max="50"
+            class="text-semibold mb-[12px] ml-[85px] text-xl focus:outline-none select-none bg-blue-600 text-gray-200 border-blue-400 border-2 rounded-md w-[100px] placeholder-semibold placeholder-gray-200"
+            id="userInput" placeholder="# Champs">
+
+        <div class="animated-border-div text-gray-200 font-mono text-3xl bg-blue-500 p-2 rounded-md  cursor-pointer"
+            id="genbutton">Randomize Champs</div>
+
+    </div>
+    <div class="absolute mt-[36vh] ml-[33vw]">
+        <div class="flex pt-[20px]">
+            <div id="blueside" class="w-[300px] overflow-auto h-[500px] border-blue-500 border-2 rounded-sm mr-[10px]">
+                <img width="60" height="60" src="https://cdn.communitydragon.org/14.22.0/champion/annie/square">
+                <img width="60" height="60" src="https://cdn.communitydragon.org/14.22.0/champion/annie/square">
+                <img width="60" height="60" src="https://cdn.communitydragon.org/14.22.0/champion/annie/square">
+            </div>
+            <div id="redside" class="w-[300px] overflow-hidden h-[500px] border-red-500 border-2 rounded-sm ml-[10px]"></div>
+        </div>
+    </div>
+
+
+    
 </body>
+
 </html>

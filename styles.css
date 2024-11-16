@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c2340;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes animated-border {
+
+    0% {
+        border-top: 2px solid #2be2c3;
+        border-right: 2px solid #2be2c3;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    33% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid #2be2c3;
+        border-bottom: 2px solid #2be2c3;
+        border-left: 2px solid transparent;
+    }
+
+    66% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid #2be2c3;
+        border-left: 2px solid #2be2c3;
+    }
+
+    100% {
+        border-top: 2px solid #2be2c3;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid #2be2c3;
+    }
+
+}
+
+/* Apply the animation to the div */
+.animated-border-div {
+    animation: animated-border 4s linear infinite;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+img {
+    width: 60px;           /* Width of each image */
+    height: auto;           /* Maintain aspect ratio */
+    object-fit: cover;      /* Optional: Ensures the image covers the area */
+}

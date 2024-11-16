@@ -1,5 +1,4 @@
 var championslist = {};
-var champions;
 var champslen = 0;
 var taken = [];
 function addChampImage(champ, side) {
@@ -30,14 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Example: Utility function
     function generateChampion(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        return Math.floor(Math.random() * (max - min)) + min;
     }
 
     const button = document.getElementById("genbutton");
     button.addEventListener("click", genchamps);
     var chosen;
     function genchamps() {
-        champions = championslist;
+        var champions = championslist.slice();
         clearchampicons();
         var champstogen = document.getElementById('userInput').value
         for (let i = 0; i < champstogen; i++) {

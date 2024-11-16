@@ -9,31 +9,31 @@ body {
 @keyframes animated-border {
 
     0% {
-        border-top: 2px solid #2be2c3;
-        border-right: 2px solid #2be2c3;
+        border-top: 2px solid #ef4444;
+        border-right: 2px solid #ef4444;
         border-bottom: 2px solid transparent;
         border-left: 2px solid transparent;
     }
 
     33% {
         border-top: 2px solid transparent;
-        border-right: 2px solid #2be2c3;
-        border-bottom: 2px solid #2be2c3;
+        border-right: 2px solid #ef4444;
+        border-bottom: 2px solid #ef4444;
         border-left: 2px solid transparent;
     }
 
     66% {
         border-top: 2px solid transparent;
         border-right: 2px solid transparent;
-        border-bottom: 2px solid #2be2c3;
-        border-left: 2px solid #2be2c3;
+        border-bottom: 2px solid #ef4444;
+        border-left: 2px solid #ef4444;
     }
 
     100% {
-        border-top: 2px solid #2be2c3;
+        border-top: 2px solid #ef4444;
         border-right: 2px solid transparent;
         border-bottom: 2px solid transparent;
-        border-left: 2px solid #2be2c3;
+        border-left: 2px solid #ef4444;
     }
 
 }

@@ -60,14 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then((data) => {
             championslist = Object.keys(data.data);
-            console.log(champions)
         })
         .catch((error) => {
             console.error("Error loading JSON:", error);
         });
 
-    // Log a random number between 1 and 10
-    console.log("Random Number:", generateChampion(1, 10));
 });
 
 
